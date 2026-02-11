@@ -53,7 +53,7 @@ if height > 0:
     fig.update_layout(height=400, margin=dict(l=20, r=20, t=50, b=20))
 
     # Display in Streamlit
-    st.plotly_chart(fig, use_container_width=True)
+    st.plotly_chart(fig, width='stretch')
 
     # Summary box
     st.info(f"Your BMI is **{bmi}**, which puts you in the **{category}** category.")
